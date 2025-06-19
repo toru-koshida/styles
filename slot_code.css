@@ -1,0 +1,91 @@
+  body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+  }
+
+  .dashboard {
+      width: 100%;
+      max-width: 420px;
+      min-height: 40px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      background-color: rgba(255, 215, 0, 0.2);
+      color: #ffd700;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  }
+
+  .dashboard.error {
+      background-color: rgba(255, 107, 107, 0.2);
+      color: #ff6b6b;
+      box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+  }
+
+  form#codeForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 420px;
+      width: 100%;
+  }
+
+  .code-input {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .code-input input {
+      width: 50px;
+      height: 70px;
+      font-size: 2.5rem;
+      text-align: center;
+      border: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s, box-shadow 0.3s;
+  }
+
+  .code-input input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 10px 3px #ffd700;
+  }
+
+  .code-input input::-webkit-inner-spin-button,
+  .code-input input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  .submit-btn {
+      width: 160px;
+      height: 50px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 12px;
+      background: #ffd700;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+  }
+
+  .submit-btn:hover {
+      background: #ffca00;
+  }
