@@ -1,89 +1,147 @@
-.speas1 {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 200px;               /* 幅指定 */
-    height: 400px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #FFFFFF;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
 }
 
-.botan1 {
-    position: absolute;
-    left: 20px;
-    top: 450px;
-    width: 200px;               /* 幅指定 */
-    height: 100px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #F00;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
-  font-size: 50px;                    /* 文字サイズ指定 */
-  text-align:  center;                /* 中央揃え */
+.slot {
+    display: grid;
+    grid-template-areas:
+        "speas1 speas2 speas3"
+        "botan1 botan2 botan3"
+        "outlet outlet outlet";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.speas1,
+.speas2,
+.speas3 {
+    width: 200px;
+    height: 400px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.botan1,
+.botan2,
+.botan3 {
+    width: 200px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(145deg, #ffca00, #ffd700);
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.botan1:hover,
+.botan2:hover,
+.botan3:hover {
+    background: linear-gradient(145deg, #ffd700, #ffc400);
+    transform: translateY(-2px);
+}
+
+.botan1:active,
+.botan2:active,
+.botan3:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.speas1 {
+    grid-area: speas1;
 }
 
 .speas2 {
-    position: absolute;
-    left: 240px;
-    top: 20px;
-    width: 200px;               /* 幅指定 */
-    height: 400px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #FFFFFF;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
-}
-
-.botan2 {
-    position: absolute;
-    left: 240px;
-    top: 450px;
-    width: 200px;               /* 幅指定 */
-    height: 100px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #F00;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
-  font-size: 50px;                    /* 文字サイズ指定 */
-  text-align:  center;                /* 中央揃え */
-}
-
-.botan3 {
-    position: absolute;
-    left: 460px;
-    top: 450px;
-    width: 200px;               /* 幅指定 */
-    height: 100px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #F00;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
-  font-size: 50px;                    /* 文字サイズ指定 */
-  text-align:  center;                /* 中央揃え */
+    grid-area: speas2;
 }
 
 .speas3 {
-    position: absolute;
-    left: 460px;
-    top: 20px;
-    width: 200px;               /* 幅指定 */
-    height: 400px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #FFFFFF;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
+    grid-area: speas3;
 }
+
+.botan1 {
+    grid-area: botan1;
+}
+
+.botan2 {
+    grid-area: botan2;
+}
+
+.botan3 {
+    grid-area: botan3;
+}
+
 .outlet {
-    position: absolute;
-    left: 20px;
-  top: 560px;
-    width: 650px;               /* 幅指定 */
-    height: 90px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #808080;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
+    grid-area: outlet;
+    width: calc(100% - 40px);
+    max-width: 650px;
+    height: 90px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .radius_test {
-    width: 670px;               /* 幅指定 */
-    height: 650px;              /* 高さ指定 */
-    border: solid 2px #000;     /* 枠線指定 */
-    background-color: #000;     /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .slot {
+        grid-template-areas:
+            "speas1 speas2"
+            "speas3 ."
+            "botan1 botan2"
+            "botan3 ."
+            "outlet outlet";
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .speas3, .botan3 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slot {
+        grid-template-areas:
+            "speas1"
+            "speas2"
+            "speas3"
+            "botan1"
+            "botan2"
+            "botan3"
+            "outlet";
+        grid-template-columns: 1fr;
+    }
 }

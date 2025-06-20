@@ -97,3 +97,7 @@ form#codeForm {
 .submit-btn:hover {
     background: #ffca00;
 }
+
+.slot{
+    flex: center;
+}
