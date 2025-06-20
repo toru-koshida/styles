@@ -1,0 +1,89 @@
+.speas1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 200px;               /* 幅指定 */
+    height: 400px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #FFFFFF;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+}
+
+.botan1 {
+    position: absolute;
+    left: 20px;
+    top: 450px;
+    width: 200px;               /* 幅指定 */
+    height: 100px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #F00;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+  font-size: 50px;                    /* 文字サイズ指定 */
+  text-align:  center;                /* 中央揃え */
+}
+
+.speas2 {
+    position: absolute;
+    left: 240px;
+    top: 20px;
+    width: 200px;               /* 幅指定 */
+    height: 400px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #FFFFFF;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+}
+
+.botan2 {
+    position: absolute;
+    left: 240px;
+    top: 450px;
+    width: 200px;               /* 幅指定 */
+    height: 100px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #F00;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+  font-size: 50px;                    /* 文字サイズ指定 */
+  text-align:  center;                /* 中央揃え */
+}
+
+.botan3 {
+    position: absolute;
+    left: 460px;
+    top: 450px;
+    width: 200px;               /* 幅指定 */
+    height: 100px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #F00;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+  font-size: 50px;                    /* 文字サイズ指定 */
+  text-align:  center;                /* 中央揃え */
+}
+
+.speas3 {
+    position: absolute;
+    left: 460px;
+    top: 20px;
+    width: 200px;               /* 幅指定 */
+    height: 400px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #FFFFFF;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+}
+.outlet {
+    position: absolute;
+    left: 20px;
+  top: 560px;
+    width: 650px;               /* 幅指定 */
+    height: 90px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #808080;  /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+}
+
+.radius_test {
+    width: 670px;               /* 幅指定 */
+    height: 650px;              /* 高さ指定 */
+    border: solid 2px #000;     /* 枠線指定 */
+    background-color: #000;     /* 背景色指定 */
+    border-radius: 10px;        /* 角丸指定 */
+}
